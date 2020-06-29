@@ -1,0 +1,113 @@
+$primary-color:#364f6b;
+// $primary-color:#071e3d;
+$light-red-color:#fc5185;
+$secondary-color:#f5d949;
+$light-color:#43dde6;
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $light-red-color;
+  font-family: Alegreya, serif;
+  overflow: hidden;
+
+  @media screen and (max-width:450px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+
+    @media screen and (max-width:450px) {
+      width: 100%;
+    }
+
+    .about-header,
+    .about-sub-header {
+      font-size: 500;
+      font-size: 2.5rem;
+    }
+
+    .about-header {
+      margin-top: 90px;
+      color: $secondary-color;
+      margin-left: 170px;
+
+      @media screen and (max-width:450px) {
+        margin-top: 10px;
+      }
+
+    }
+
+    .about-sub-header {
+      color: white;
+      margin-left: 100px;
+      margin-bottom: 40px;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+
+      img {
+        width: 370px;
+        height: 400px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center top;
+
+        @media screen and (max-width:450px) {
+          display: none;
+        }
+      }
+
+      &-content {
+        line-height: 1.5;
+        width: 50%;
+
+        @media screen and (max-width:450px) {
+          width: 100%;
+          margin: 1rem;
+        }
+
+        h1 {
+          color: $secondary-color;
+          font-size: 2rem;
+
+          @media screen and (max-width:450px) {
+            text-align: center;
+          }
+        }
+
+        p {
+          color: white;
+          font-weight: 500;
+          font-size: 1.5rem;
+
+          .li {
+            color: $secondary-color;
+          }
+
+        }
+
+        .link {
+          text-decoration: underline;
+          color: #071e3d;
+          cursor: pointer;
+
+
+        }
+      }
+    }
+  }
+}

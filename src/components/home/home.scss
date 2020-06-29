@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&display=swap');
+$primary-color:#364f6b;
+// $primary-color:#071e3d;
+// $secondary-color:#fc5185;
+$secondary-color:#f5d949;
+$light-color:#43dde6;
+
+.hero {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background: $primary-color;
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.65);
+
+  }
+
+  @media screen and (max-width:450px) {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($color: #000000, $alpha: 0.7);
+
+    }
+  }
+
+  .hero-img {
+    margin-top: 80px;
+
+    @media screen and (max-width:450px) {
+      margin-top: 10px;
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    color: $secondary-color;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Alegreya', serif;
+    text-transform: uppercase;
+
+    z-index: 3;
+
+    @media screen and (max-width:450px) {
+      z-index: 3;
+    }
+
+  }
+}

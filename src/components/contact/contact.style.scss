@@ -1,0 +1,127 @@
+$primary-color: #364f6b;
+// $primary-color:#071e3d;
+$light-red-color: #fc5185;
+$secondary-color: #f5d949;
+$light-color: #43dde6;
+
+.contact {
+  font-family: Alegreya, serif;
+  background: $primary-color;
+  line-height: 1.6;
+  width: 100vw;
+  height: 100vh;
+
+  .container {
+    max-width: 1100px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70%;
+
+      a {
+        font-size: 2rem;
+        color: #5e7692;
+      }
+    }
+
+    h1 {
+      padding-top: 90px;
+      color: $secondary-color;
+
+      @media screen and (max-width:450px) {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 3rem;
+      }
+    }
+
+    .wrapper {
+      box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+      border-radius: 10px;
+      display: flex;
+      width: 60%;
+      margin: auto;
+
+      @media screen and (max-width:450px) {
+
+        width: 90%;
+        margin: 1rem;
+      }
+
+      &>* {
+        padding: 1em;
+      }
+
+      .social-media {
+        background: $light-color;
+        color: #5e7692;
+        width: 25%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      .contact-form {
+        width: 75%;
+        background: #5e7692;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        form {
+          display: flex;
+          flex-direction: column;
+
+          .form-group {
+            margin-bottom: 1rem;
+
+            label {
+              display: block;
+            }
+          }
+        }
+
+        form button,
+        form input,
+        form textarea {
+          background: #c9e6ff;
+          border: 1px solid #000;
+          text-transform: uppercase;
+          padding: 8px 12px;
+          border-radius: 5px;
+          width: 100%;
+          transition: all 0.2s ease-in-out;
+        }
+
+        form input,
+        form textarea {
+          &:focus {
+            outline: none;
+            border: $light-color 1px solid;
+          }
+        }
+
+        form button {
+          background: $light-color;
+          color: c9e6ff;
+          cursor: pointer;
+          border: 0;
+          margin-top: 1rem;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
