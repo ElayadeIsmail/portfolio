@@ -107,7 +107,7 @@ const SkillsTools = () => {
         <div className='skill-footer'>
           <h2>I'm Currently available for freelance work</h2>
           <p>
-            if You have a project that you want to get Started, a Can help you
+            if You have a project that you want to get Started,I Can help you
             with that{" "}
             <Link
               className='link'

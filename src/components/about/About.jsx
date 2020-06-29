@@ -15,8 +15,8 @@ const About = () => {
             <p>
               I'm A web developer based in Rabat Morocco,
               <br />
-              I have a degree in physical science at the Faculty of Sciences in
-              Rabat.
+              I have a Bachelor degree in physical science at the Faculty of
+              Sciences in Rabat.
               <br />
               and there i got introduced to programming languages and right
               there i've got a passion for it, and after I got my degree i knew
