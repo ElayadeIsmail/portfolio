@@ -41,21 +41,23 @@ const Contact = () => {
             </ul>
           </div>
           <div className='contact-form'>
-            <form name='contact' method='POST' data-netlify='true'>
-              <div className='form-group'>
+            <form method='POST' data-netlify='true'>
+              <p className='form-group'>
                 <label>Name</label>
                 <input type='text' name='name' />
-              </div>
+              </p>
 
-              <div className='form-group'>
+              <p className='form-group'>
                 <label>Email Address</label>
                 <input type='email' name='email' />
-              </div>
-              <div className='form-group'>
+              </p>
+              <p className='form-group'>
                 <label>Message</label>
                 <textarea name='message' rows='5'></textarea>
+              </p>
+              <p>
                 <button type='submit'>Submit</button>
-              </div>
+              </p>
             </form>
           </div>
         </div>
