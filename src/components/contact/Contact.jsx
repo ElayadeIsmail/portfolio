@@ -41,7 +41,7 @@ const Contact = () => {
             </ul>
           </div>
           <div className='contact-form'>
-            <form>
+            <form name='contact' method='POST' data-netlify='true'>
               <div className='form-group'>
                 <label>Name</label>
                 <input type='text' name='name' />
